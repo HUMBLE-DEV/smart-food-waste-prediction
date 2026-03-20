@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Food Waste Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+    <main class="app-main">
+      <div class="form-card">
+        <form action="/predict" method="post">
+          <label for="Day_of_Week">Day of Week:</label>
+          <select name="Day_of_Week" id="Day_of_Week" required>
+            <option value=""> Select Day </option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+
+          <label for="Festival">Festival:</label>
+        <input type="number" name="Festival" id="Festival" placeholder="Is the day a Festival ? (True:1 and False:0)">
+
+
+          <label for="Weather">Weather:</label>
+          <select name="Weather" id="Weather" required>
+            <option value=""> Select Weather </option>
+            <option>Sunny</option>
+            <option>Rainy</option>
+            <option>Cloudy</option>
+             <option>Stormy</option>
+
+          </select>
+
+          <label for="Expected_Customers">Expected Customers:</label>
+          <input type="number" name="Expected_Customers" id="Expected_Customers" placeholder="Enter number">
+
+          <label for="Previous_Day_Consumption">Previous Day Consumption:</label>
+          <input type="number" name="Previous_Day_Consumption" id="Previous_Day_Consumption" placeholder="Enter number">
+
+          <label for="Previous_Week_Same_Day">Previous Week Same Day:</label>
+          <input type="number" name="Previous_Week_Same_Day" id="Previous_Week_Same_Day" placeholder="Enter number">
+
+          <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="prediction">
+          {{ prediction_text }}
+        </div>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2026 Smart Food Waste Prediction | Designed for real-world impact</p>
+    </footer>
+  </div>
+</body>
+</html>
