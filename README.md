@@ -112,4 +112,4 @@ Attributes:
 Level 300 Computer Science Student, University of Energy and Natural Resources  
 Internship Program – LearnDepth Academy LLP  
 
-Linkedin - 
+Linkedin - https://www.linkedin.com/posts/emmanuel-ntim-baidoo_machinelearning-flask-foodwastereduction-activity-7440709336856895488-3uoq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF7HyO0BSpLETPoiZjRb34eepLpz7r_zz3Y
