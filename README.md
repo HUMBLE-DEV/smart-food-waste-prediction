@@ -1,9 +1,3 @@
-A **README** is different from a **project report**. The report is a formal document explaining your workflow, challenges, and results. The README is a **developer‑facing guide** that lives in your project folder (usually `README.md`) and tells someone how to understand, install, and run your project. Think of it as the “manual” for your codebase.  
-
-Here’s a professional README draft for your **Smart Food Waste Prediction System**:
-
----
-
 # Smart Food Waste Prediction System
 
 ## 📌 Overview
